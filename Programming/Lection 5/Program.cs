@@ -1,4 +1,6 @@
-﻿Console.Clear();
+﻿// СОРТИРОВКА ПУЗЫРЬКОМ
+
+Console.Clear();
 Console.Write("Введите количество элементов массива: ");
 int n = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[n];
