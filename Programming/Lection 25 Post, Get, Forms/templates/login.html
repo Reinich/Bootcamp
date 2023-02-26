@@ -1,0 +1,40 @@
+{% extends 'Base.html' %}
+<!DOCTYPE html>
+<html>
+    {% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {% if form %}
+    <form action="" method="post">
+        {{ form.csrf_token }}
+        <p style="margin-left: 10px;">{{ form.email.label }}</p>
+        <p style="margin-left: 50px;">{{ form.email() }}</p>
+        
+        <br>
+        <p style="margin-left: 10px;">{{ form.password.label }}</p>
+        <p style="margin-left: 50px;">{{ form.password() }}</p>
+        <br>
+        {{ form.submit() }}
+    {% endif %}
+
+    {{ message }}
+
+
+        
+
+
+
+    </form>
+
+
+
+
+
+
+
+    {% endblock %}
+</body>
+</html>
